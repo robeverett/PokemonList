@@ -1,0 +1,21 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor="let pokemon of pokemons; let i = index">
+    <mat-expansion-panel-header>
+      {{ pokemon.name }}
+    </mat-expansion-panel-header>
+    <div class="pokemon-image">
+      <img [src]="" [alt]="">
+    </div>
+    <div [routerLink]="['/view', pokemon.name]">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Types</mat-card-title>
+        </mat-card-header>
+        <mat-card-content *ngFor="let type of pokemon.types">
+          {{ type.type.name }}
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
