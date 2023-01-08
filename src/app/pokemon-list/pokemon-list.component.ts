@@ -2,7 +2,6 @@ import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
 import { Subscription, concat, Observable } from 'rxjs';
 
-import { Pokemon } from '../pokemon.model';
 import { PokemonService } from '../pokemon.service';
 
 @Component({
@@ -16,13 +15,12 @@ export class PokemonListComponent implements OnInit, OnDestroy {
 
   @ViewChild(MatAccordion) accordion?: MatAccordion;
 
-  pokemon: Pokemon[] = [];
   isLoading = false;
-  totalPokemon = 0;
-  pokemonPerPage = 2;
-  currentPage = 1;
-  pageSizeOptions = [1, 2, 5, 10];
-  xpandedStatus = false;
+  // totalPokemon = 0;
+  // pokemonPerPage = 2;
+  // currentPage = 1;
+  // pageSizeOptions = [1, 2, 5, 10];
+  // xpandedStatus = false;
   subscriptions: Subscription[] = [];
 
   get pokemons(): any[] {
