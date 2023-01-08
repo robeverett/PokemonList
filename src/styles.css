@@ -46,7 +46,7 @@
 }
 
 .bg-fire {
-	background-color: #EE8130;
+	background-color: #a33667;
 	color: #fff;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .bg-grass {
-	background-color: #7AC74C;
+	background-color: #025255;
 	color: #fff;
 }
 
@@ -133,4 +133,12 @@
 .bg-unknown {
 	background-color: #aaa;
 	color: #fff;
+}
+
+.list-group-flush>.list-group-item {
+  color: #fff;
+}
+
+body {
+  background-color: #025255 important;
 }

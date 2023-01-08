@@ -16,11 +16,6 @@ export class PokemonListComponent implements OnInit, OnDestroy {
   @ViewChild(MatAccordion) accordion?: MatAccordion;
 
   isLoading = false;
-  // totalPokemon = 0;
-  // pokemonPerPage = 2;
-  // currentPage = 1;
-  // pageSizeOptions = [1, 2, 5, 10];
-  // xpandedStatus = false;
   subscriptions: Subscription[] = [];
 
   get pokemons(): any[] {
