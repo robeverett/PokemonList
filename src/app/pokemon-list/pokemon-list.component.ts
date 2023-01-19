@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
-import { Subscription, concat, Observable } from 'rxjs';
+import { Subscription, concat } from 'rxjs';
 
 import { PokemonService } from '../pokemon.service';
 
